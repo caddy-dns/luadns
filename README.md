@@ -20,8 +20,8 @@ To use this module for the ACME DNS challenge, [configure the ACME issuer in you
 		"dns": {
 			"provider": {
 				"name": "luadns",
-				"email": "YOUR_PROVIDER_EMAIL",
-				"api_key": "YOUR_PROVIDER_API_KEY"
+				"email": "YOUR_LUADNS_EMAIL",
+				"api_key": "YOUR_LUADNS_API_KEY"
 			}
 		}
 	}
@@ -30,22 +30,22 @@ To use this module for the ACME DNS challenge, [configure the ACME issuer in you
 
 or with the Caddyfile:
 
-```
+```Caddyfile
 # globally
 {
 	acme_dns luadns {
-		api_key <your_provider_email>
-		api_key <your_provider_api_key>
+		api_key <your_luadns_email>
+		api_key <your_luadns_api_key>
 	}
 }
 ```
 
-```
+```Caddyfile
 # one site
 tls {
 	dns luadns {
-		api_key <your_provider_email>
-		api_key <your_provider_api_key>
+		api_key <your_luadns_email>
+		api_key <your_luadns_api_key>
 	}
 }
 ```
