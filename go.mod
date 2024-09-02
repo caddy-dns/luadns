@@ -1,4 +1,4 @@
-module github.com/caddy-dns/luadns
+module github.com/dimitrovs/luadns
 
 go 1.21.0
 
