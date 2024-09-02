@@ -47,7 +47,7 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 					return d.Err("Email already set")
 				}
 				if d.NextArg() {
-					p.Provider.APIKey = d.Val()
+					p.Provider.Email = d.Val()
 				}
 				if d.NextArg() {
 					return d.ArgErr()
