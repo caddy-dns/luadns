@@ -34,18 +34,17 @@ or with the Caddyfile:
 # globally
 {
 	acme_dns luadns {
-		email <your_luadns_email>
+		email   <your_luadns_email>
 		api_key <your_luadns_api_key>
 	}
 }
 ```
-Note that the `dns_ttl` directive is required!
+
 ```Caddyfile
 # one site
 tls {
-	dns_ttl 5m
 	dns luadns {
-		email <your_luadns_email>
+		email   <your_luadns_email>
 		api_key <your_luadns_api_key>
 	}
 }
